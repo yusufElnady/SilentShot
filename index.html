@@ -10,8 +10,9 @@
         <script>
           function setup() {
             var windowWidth = window.innerWidth;
-            var windowHeight = window.innerHeight;
-            var cnv = createCanvas(windowWidth, windowHeight);
+            //var windowHeight = window.innerHeight;
+            var cnv = createCanvas(windowWidth, 130);
+              cnv.parent("#animation");
           }
           var velocity = 0;
           function draw() {
@@ -47,11 +48,15 @@
   <center>
     <hr/>
     <!--<font size="+3"><h1 class="titleFont">Silent Shot</h1></font>-->
-    <img src="C:\Users\yusuf\Documents\silent shot photoshop.png" alt="silent shot"/>
+    <img src="silent-shot-photoshop.png" alt="silent shot"/>
     <hr/>
     <!--<img src="" width="450" height="400">-->
+      
+    <div id="animation">
+    </div>
+      
       <font size="+3">
-    <div class="whiteBlack normalFont"> 
+    <div class="normalFont"> 
         
       <p>
         Silent Shot is a first person shooter made by :
