@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+  <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.12/p5.js"></script>   
+    
+                  <!-- this is my sript -->
+        <script>
+          function setup() {
+            var windowWidth = window.innerWidth;
+            var windowHeight = window.innerHeight;
+            var cnv = createCanvas(windowWidth, windowHeight);
+          }
+          var velocity = 0;
+          function draw() {
+            background(255,255,255);
+            fill(0,0,0);
+            rect(10, 50, 20, 60);
+            rect(10, 50, 130, 20);
+            rect(100, 50, 60, 10);
+            rect(50, 70, 60, 10);
+            rect(120, 70, 15, 60);
+            rect(140, 45, 10, 20);
+            rect(150 + velocity, 55, 10, 5, 10);
+            if(velocity < (window.innerWidth - 150)) {
+              velocity += 10;
+            } else if (velocity >= (window.innerWidth - 150)){
+              velocity = 0;
+            }  
+          }
+        </script>
+
+  <style>
+    .blueBack{background-color: dodgerblue}
+    .normalFont{font-family: 'Encode Sans';}
+    .whiteRed{background-color: darkred;color: blanchedalmond;}
+    .whiteBlack{background-color: black;color: white;}
+    .normal{background-color: white;color: black;}
+    .titleFont{font-family: 'Saira Semi Condensed', 'Monospace';}
+    .alignLeft{text-align: left;}
+    .alignCenter{text-align: center;}
+    .alignRight{text-align: right;}
+      body{margin-left: 100px;margin-right: 100px;}
+  </style>
+  <center>
+    <hr/>
+    <!--<font size="+3"><h1 class="titleFont">Silent Shot</h1></font>-->
+    <img src="C:\Users\yusuf\Documents\silent shot photoshop.png" alt="silent shot"/>
+    <hr/>
+    <!--<img src="" width="450" height="400">-->
+      <font size="+3">
+    <div class="whiteBlack normalFont"> 
+        
+      <p>
+        Silent Shot is a first person shooter made by :
+      <ul>
+        <li>Ragai Ahmed</li>
+        <li>Yusuf El-Nady</li>
+        <li>Zeyad Islam</li>
+        <li>Omar Ahmed</li>
+      </ul>
+    <font size="+1">
+      <p>
+        It's currently still in development with two maps; a forest and a city. There are also two  game modes , which are assassin mode
+        and survival mode, and there is a multiplayer update coming soon!
+      </p>
+        </font>
+        
+        <div>
+        <font size="+2"><h1 class="whiteRed">Assassin Mode</h1></font>
+        <p>
+            In assasin mode, you will be asked to assassinate a specific person who will be followed by bodyguards, so try to kill him instantly before the bodyguards get you!
+        </p>
+        </div>
+        
+      <div>
+      <font size="+2"><h1 class="whiteRed">Survival Mode</h1></font>
+      <p>
+            In survival mode, you have to survive as long as possible and kill as many enemies as you can to gain Xp and money to buy new weapons. The enemies will spawn in an incresing rate and will follow you every where you go. You can run but you can't hide !
+      </p>
+          
+      </div>
+        
+      <span></span>
+      <span></span>
+        
+       
+      <div class="normalFont">
+      <font size="+2"><h1 class="whiteRed">Compaitablity</h1></font>
+      <p class="normal">
+            This game is as compaitable as it is awesome! It is avaliable on Mac Os, windows(from XP and up), Linux, and will soon be avaliable 
+            on android and ios. Althogh it's avaliable on nearly all platforms, it might require decent PC/ Laptop secs to function well and play 
+            without lag.
+      </p>
+      </div>
+          
+      <span></span>
+      <span></span>
+    
+        
+      <div class="normalFont">
+      <font size="+2"><h1 class="whiteRed">Contact Us</h1></font>
+      <p class="normal">
+        We would appreciate your opinions and recommendations for the development of the game. Please contact one of the developers to tell them your opinion at these links:<br />
+        <label>Here are the facebook accounts of the game developers</label>
+        <ul>
+            <li>Yusuf Maged's <a href="https://www.facebook.com/yusuf.elnady.16">Facebook</a> account</li>
+            <li>Ragai ahmed's <a href="https://www.facebook.com/search/top/?q=ragai%20ahmed%20abdel-fattah%20awad">Facebook</a> account</li>
+            <li>Omar ahmed's <a href="https://www.facebook.com/profile.php?id=100000645323949&fref=pb&hc_location=profile_browser">Facebook</a> account</li>
+            <li>Ziyad islam's <a href="https://www.facebook.com/zeezooX">Facebook</a> account</li>
+        </ul>
+      </p>
+      </div>
+    
+    
+    </div>
+    </font>
+  </center>
+</html>
